@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+.container .mainImage {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.container .title {
+  position: absolute;
+  left: 33%;
+  top: 20px;
+  font-size: 57px;
+  color: #e4e7f2;
+}
