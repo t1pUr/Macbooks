@@ -1,5 +1,9 @@
 $titleSize: 57px;
 $titleColor: #e4e7f2;
+$borderWidth: 1px;
+$borderColour: #162e3c;
+$LabtopTitleSize: 20px;
+$priceSize: 30px;
 
 body{
 	margin: 0;
@@ -23,4 +27,48 @@ body{
 	color: $titleColor;
 	} 
 }
+
+.product{
+		word-wrap: normal;
+		display: flex;
+		flex-wrap: wrap;
+		img{
+			display: block;
+  			margin: 0 auto;
+		}
+		
+		h1{
+			text-align: center;
+			font-size: $LabtopTitleSize;
+			font-weight: 300; 
+			border-bottom: $borderWidth solid $borderColour;
+		}
+
+		.leftPart{
+			width: 30%;
+		}
+
+		.rightPart{
+			width: 70%;
+		}
+
+		.price{
+			color: red;
+			font-size: $priceSize;
+			display: block;
+  			margin: 0 auto;
+  			bottom: 0px;
+		}
+	}
+
+
+	
+table{
+	border-collapse: collapse;
+}
+
+tr, td{
+	border: $borderWidth solid $borderColour;
+}
+
 
